@@ -7,20 +7,21 @@ var start = document.querySelector('#start')
 function startTime() {
     var timerInterval = setInterval(function() {
         secondsLeft--;
-        time.textContent = "Time:" + secondsLeft
+        time.textContent = "Time:" + secondsLeft;
 
         if (secondsLeft === 0) {
-            clearInterval(timerInterval)
+            clearInterval(timerInterval);
             main.textContent = "You Lose"
         }
 
-    }, 60000);
+    }, 1000);
 }
 
 // function to test event listener
 function printTrue() {
     console.log("True")
     console.log(secondsLeft)
+    startTime()
 }
 
 start.addEventListener('click', startTime)

@@ -4,6 +4,11 @@ header {
     
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .highscore {
     display: inline;
     margin-left: 5px;
