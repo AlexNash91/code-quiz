@@ -1,10 +1,10 @@
 var time = document.querySelector(".time")
 var main = document.querySelector("main")
 var secondsLeft = 60
-var start = document.querySelector(".btnDiv")
+var start = document.querySelector('#start')
 
-function setTime() {
-    var timerInterval = setinterval(function() {
+function startTime() {
+    var timerInterval = setInterval(function() {
         secondsLeft--;
         time.textContent = "Time:" + secondsLeft
 
@@ -18,8 +18,13 @@ function setTime() {
 }
 
 function startGame() {
-    
+    startTime()
 
+
+}
+
+function printTrue() {
+    console.log("True")
 }
 
 start.addEventListener('click', startGame)

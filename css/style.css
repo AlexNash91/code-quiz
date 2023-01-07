@@ -2,31 +2,19 @@ header {
     margin-bottom: 18%;
     margin-top: 1%;
     
-
-   
-    
-    
-
-
 }
 
 .highscore {
     display: inline;
     margin-left: 5px;
-    
-
-
-
-    
+       
 }
 
 .time {
     display: inline;
     float: right;
     margin-right: 5px;
-    
-    
-    
+   
 }
 
 .introContainer {
